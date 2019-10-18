@@ -20,6 +20,7 @@ pretty-html-log is a tool that allows you to highlight and pretty print your htm
   - [Simple usage](#simple-usage-1)
   - [Choose your theme](#choose-your-theme-1)
   - [Help menu](#help-menu)
+- [Extend your console with console.logPrettyHTML](#extend-your-console-with-console.logPrettyHTML)
 - [Credits](#credits)
 
 # Getting started 🚀
@@ -104,6 +105,25 @@ or
 
 ```
 pretty-html-log -h
+```
+
+# Extend your console with console.logPrettyHTML
+
+This feature allows yout to extend your console with a new log method called **logPrettyHTML**.
+This method can save you some typing and may be very handy.
+
+To set it up you simply once need to execute the following function:
+
+```
+addConsoleLogPrettyHtml();
+```
+
+_Sample places to execute this function are: app.module or jest.setup.ts etc... / depends on your need and your framework_
+
+Once you executed the _addConsoleLogPrettyHtml_ function you can simply use the following code to pretty print your HTML string to console.
+
+```
+console.logPrettyHTML(someHTML);
 ```
 
 # Credits
